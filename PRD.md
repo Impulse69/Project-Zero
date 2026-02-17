@@ -134,7 +134,9 @@ The clone will replicate the site's information architecture and content structu
 
 ## 7. Content Strategy
 
-All website content is stored as static JSON files in `src/data/`. No backend or CMS in v1.
+### v1: Static JSON Content
+
+**v1 Implementation:** All website content is stored as static JSON files in `src/data/`. Future versions will integrate backend services and CMS as outlined in section 9.
 
 | Data File                | Content                                              |
 |--------------------------|------------------------------------------------------|
@@ -146,6 +148,24 @@ All website content is stored as static JSON files in `src/data/`. No backend or
 | `partners.json`          | Partner/client logos                                  |
 | `siteConfig.json`        | Company info, social links, contact details          |
 | `navigation.json`        | Nav structure with nested dropdown definitions       |
+
+### Future: Live Sports Data Integration
+
+> **Note:** In future versions, we will integrate live sports data using free public APIs from [public-apis/public-apis](https://github.com/public-apis/public-apis).
+
+**Potential API Integrations:**
+- **Live Scores & Fixtures** — Real-time match data for cricket, football, rugby
+- **Team Statistics** — Historical performance data and rankings
+- **Player Profiles** — Athlete information and career stats
+- **Tournament Data** — League tables, schedules, and results
+- **News Feeds** — Latest sports news and updates
+
+**Architecture Considerations:**
+- API calls will be abstracted into a dedicated `src/services/api/` layer
+- Data will be cached client-side to minimize API calls
+- Fallback to static data if API is unavailable
+- Rate limiting and error handling strategies
+- Environment variables for API keys (if required)
 
 ---
 
@@ -163,9 +183,11 @@ All website content is stored as static JSON files in `src/data/`. No backend or
 
 ## 9. Future Enhancements (v2+)
 
-- 🔮 Headless CMS integration (Sanity / Strapi)
-- 🔮 Blog section with article pages
-- 🔮 Multi-language support
-- 🔮 Dark/Light mode toggle
-- 🔮 Client portal for campaign tracking
-- 🔮 Analytics dashboard
+- 🔮 **Live Sports Data Integration** — Integrate free public sports APIs for real-time scores, fixtures, and stats
+- 🔮 **Headless CMS integration** — Sanity / Strapi for content management
+- 🔮 **Blog section** — Article pages with sports marketing insights
+- 🔮 **Multi-language support** — i18n for global audiences
+- 🔮 **Dark/Light mode toggle** — User preference for theme switching
+- 🔮 **Client portal** — Campaign tracking and analytics dashboard
+- 🔮 **Live match widgets** — Embedded live score widgets on relevant pages
+- 🔮 **Sports news aggregator** — Curated news feed from multiple sources

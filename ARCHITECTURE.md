@@ -26,7 +26,7 @@ graph TB
     Components --> Styles
 ```
 
-This is a **static single-page application (SPA)** — no backend server, no API calls, no database. All content is served from static JSON files bundled at build time.
+**Current Architecture (v1):** This is a client-side single-page application (SPA) with content served from static JSON files bundled at build time. Future versions will integrate backend services and live API data as outlined in the PRD.
 
 ---
 
@@ -137,7 +137,7 @@ Project-Zero/
 │   ├── context/
 │   │   └── SiteConfigContext.jsx  # Global site config (company info, socials, etc.)
 │   │
-│   ├── data/
+│   ├── data/                     # Static JSON content (v1)
 │   │   ├── services.json
 │   │   ├── sports.json
 │   │   ├── portfolio.json
@@ -146,6 +146,19 @@ Project-Zero/
 │   │   ├── partners.json
 │   │   ├── siteConfig.json
 │   │   └── navigation.json
+│   │
+│   ├── services/                 # API & external services layer (future)
+│   │   ├── api/
+│   │   │   ├── sportsApi.js      # Main sports API client
+│   │   │   ├── apiConfig.js      # API endpoints & configuration
+│   │   │   ├── apiUtils.js       # Request/response utilities
+│   │   │   └── endpoints/
+│   │   │       ├── football.js   # Football-specific API calls
+│   │   │       ├── cricket.js    # Cricket-specific API calls
+│   │   │       ├── rugby.js      # Rugby-specific API calls
+│   │   │       └── motorsport.js # Motorsport-specific API calls
+│   │   └── cache/
+│   │       └── cacheManager.js   # Client-side data caching
 │   │
 │   ├── styles/
 │   │   ├── index.css             # Root entry — imports all below
@@ -224,6 +237,7 @@ export default defineConfig({
       '@pages': path.resolve(__dirname, './src/pages'),
       '@hooks': path.resolve(__dirname, './src/hooks'),
       '@data': path.resolve(__dirname, './src/data'),
+      '@services': path.resolve(__dirname, './src/services'),
       '@assets': path.resolve(__dirname, './src/assets'),
       '@styles': path.resolve(__dirname, './src/styles'),
       '@utils': path.resolve(__dirname, './src/utils'),
@@ -248,6 +262,7 @@ Always use `@` aliases in imports:
 // ✅ Good
 import { Button } from '@components/common/Button';
 import servicesData from '@data/services.json';
+import sportsApi from '@services/api/sportsApi';
 
 // ❌ Bad
 import { Button } from '../../../components/common/Button';

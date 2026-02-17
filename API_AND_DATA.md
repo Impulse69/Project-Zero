@@ -1,6 +1,6 @@
 # API_AND_DATA.md — Data Models & Mock Content Strategy
 
-> All content is **static JSON** stored in `src/data/`. No backend API in v1.
+> **Current Implementation (v1):** All content is static JSON stored in `src/data/`. This document defines data models for both the current static implementation and future API integration (see section 4).
 > This document defines the exact shape of every data file so agents produce consistent data.
 
 ---
@@ -549,3 +549,185 @@ import siteConfig from '@data/siteConfig.json';
 5. **Icons reference `react-icons` names** — Components map these strings to actual icon components.
 6. **Placeholder images** — During development, use generated placeholder images. Replace with real assets before launch.
 7. **No sensitive data** — All data is publicly bundled. Never put API keys, passwords, or private info here.
+
+---
+
+## 4. Future: Live Sports API Integration
+
+> **Note:** This section outlines the planned integration of live sports data using free public APIs from [public-apis/public-apis](https://github.com/public-apis/public-apis).
+
+### 4.1 API Service Layer Architecture
+
+```
+src/services/
+├── api/
+│   ├── sportsApi.js          # Main API client with fetch wrappers
+│   ├── apiConfig.js          # API endpoints, keys, base URLs
+│   ├── apiUtils.js           # Request/response helpers, error handling
+│   └── endpoints/
+│       ├── football.js       # Football-specific API calls
+│       ├── cricket.js        # Cricket-specific API calls
+│       ├── rugby.js          # Rugby-specific API calls
+│       └── motorsport.js     # Motorsport-specific API calls
+└── cache/
+    └── cacheManager.js       # Client-side caching with localStorage/IndexedDB
+```
+
+### 4.2 Potential Public APIs
+
+Based on [public-apis/public-apis](https://github.com/public-apis/public-apis), these are candidate APIs:
+
+| API                  | Sport(s)              | Features                                    | Auth Required |
+|----------------------|-----------------------|---------------------------------------------|---------------|
+| **API-FOOTBALL**     | Football              | Live scores, fixtures, standings, stats     | API Key       |
+| **CricAPI**          | Cricket               | Live scores, match schedules, player stats  | API Key       |
+| **TheSportsDB**      | Multi-sport           | Teams, players, events, leagues             | Free tier     |
+| **Sportradar**       | Multi-sport           | Real-time data, statistics, odds            | API Key       |
+| **ESPN API**         | Multi-sport           | Scores, news, schedules                     | None (public) |
+
+### 4.3 API Client Pattern
+
+```js
+// src/services/api/sportsApi.js
+const API_BASE_URL = import.meta.env.VITE_SPORTS_API_URL;
+const API_KEY = import.meta.env.VITE_SPORTS_API_KEY;
+
+class SportsApiClient {
+  async fetchLiveScores(sport) {
+    try {
+      const response = await fetch(`${API_BASE_URL}/${sport}/live`, {
+        headers: { 'X-API-Key': API_KEY }
+      });
+      
+      if (!response.ok) throw new Error('API request failed');
+      
+      const data = await response.json();
+      return this.normalizeData(data);
+    } catch (error) {
+      console.error('API Error:', error);
+      return this.getFallbackData(sport); // Return static data on failure
+    }
+  }
+
+  normalizeData(rawData) {
+    // Transform API response to match our internal data structure
+    return rawData;
+  }
+
+  getFallbackData(sport) {
+    // Return static JSON data as fallback
+    return import(`@data/${sport}.json`);
+  }
+}
+
+export default new SportsApiClient();
+```
+
+### 4.4 Caching Strategy
+
+```js
+// src/services/cache/cacheManager.js
+const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
+
+export const cacheManager = {
+  set(key, data) {
+    const cacheEntry = {
+      data,
+      timestamp: Date.now(),
+    };
+    localStorage.setItem(key, JSON.stringify(cacheEntry));
+  },
+
+  get(key) {
+    const cached = localStorage.getItem(key);
+    if (!cached) return null;
+
+    const { data, timestamp } = JSON.parse(cached);
+    const isExpired = Date.now() - timestamp > CACHE_DURATION;
+
+    return isExpired ? null : data;
+  },
+
+  clear() {
+    localStorage.clear();
+  },
+};
+```
+
+### 4.5 Component Integration Pattern
+
+```jsx
+// Example: Live scores widget
+import { useState, useEffect } from 'react';
+import sportsApi from '@services/api/sportsApi';
+import { cacheManager } from '@services/cache/cacheManager';
+
+const LiveScoresWidget = ({ sport }) => {
+  const [scores, setScores] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchScores = async () => {
+      // Check cache first
+      const cached = cacheManager.get(`live-scores-${sport}`);
+      if (cached) {
+        setScores(cached);
+        setLoading(false);
+        return;
+      }
+
+      // Fetch from API
+      const data = await sportsApi.fetchLiveScores(sport);
+      cacheManager.set(`live-scores-${sport}`, data);
+      setScores(data);
+      setLoading(false);
+    };
+
+    fetchScores();
+    const interval = setInterval(fetchScores, 60000); // Refresh every minute
+
+    return () => clearInterval(interval);
+  }, [sport]);
+
+  if (loading) return <Skeleton />;
+
+  return (
+    <div>
+      {scores.map(match => (
+        <MatchCard key={match.id} match={match} />
+      ))}
+    </div>
+  );
+};
+```
+
+### 4.6 Environment Variables
+
+```env
+# .env.example
+VITE_SPORTS_API_URL=https://api.example.com/v1
+VITE_SPORTS_API_KEY=your_api_key_here
+VITE_ENABLE_LIVE_DATA=false  # Toggle between static and live data
+```
+
+### 4.7 Migration Strategy
+
+1. **Phase 1 (v1):** Ship with static JSON data only
+2. **Phase 2 (v1.5):** Build API service layer with feature flag
+3. **Phase 3 (v2):** Enable live data for specific sections (e.g., home page stats)
+4. **Phase 4 (v2.5):** Full live data integration with fallback to static
+5. **Phase 5 (v3):** Remove static data, API-first architecture
+
+### 4.8 Error Handling & Fallbacks
+
+```js
+// Always provide graceful degradation
+const fetchWithFallback = async (apiCall, fallbackData) => {
+  try {
+    return await apiCall();
+  } catch (error) {
+    console.warn('API unavailable, using fallback data:', error);
+    return fallbackData;
+  }
+};
+```
