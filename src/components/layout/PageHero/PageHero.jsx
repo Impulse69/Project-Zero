@@ -22,18 +22,18 @@ const PageHero = ({ title, subtitle, bgImage, className }) => {
 
             {/* Content */}
             <div className="relative z-10 container mx-auto px-4 text-center">
-                <div className="flex justify-center mb-4">
-                    <Breadcrumbs />
-                </div>
 
-                <motion.h1
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, ease: "easeOut" }}
-                    className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight"
-                >
-                    {title}
-                </motion.h1>
+
+                {title && (
+                    <motion.h1
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight"
+                    >
+                        {title}
+                    </motion.h1>
+                )}
 
                 {subtitle && (
                     <motion.p

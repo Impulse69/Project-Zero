@@ -23,7 +23,6 @@ const PortfolioPage = () => {
             <PageHero
                 title="Our Portfolio"
                 subtitle="A showcase of our most impactful work in the world of sports."
-                bgImage="/assets/images/portfolio/portfolio-hero.webp"
             />
 
             <Section padding="lg">
@@ -58,7 +57,7 @@ const PortfolioPage = () => {
                 </Container>
             </Section>
 
-            <CTABanner />
+
         </>
     );
 };

@@ -11,7 +11,6 @@ const ContactPage = () => {
             <PageHero
                 title="Contact Us"
                 subtitle="Let's discuss how we can elevate your brand."
-                bgImage="/assets/images/contact-hero.webp"
             />
 
             <Section padding="lg">
@@ -30,12 +29,7 @@ const ContactPage = () => {
                 </Container>
             </Section>
 
-            <CTABanner
-                title="Ready to get started?"
-                subtitle="Our team is standing by to help you achieve your goals."
-                buttonText="Get in Touch"
-                buttonLink="/contact" // Scrolls to top or just redundant
-            />
+
         </>
     );
 };

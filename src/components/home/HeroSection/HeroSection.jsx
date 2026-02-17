@@ -47,7 +47,7 @@ const HeroSection = () => {
                             color: 'var(--sp-color-secondary)',
                         }}
                     >
-                        Premium Sports Marketing
+                        The Pulse of African Athletics
                     </span>
                 </motion.div>
 
@@ -62,7 +62,7 @@ const HeroSection = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7, delay: 0.4 }}
                 >
-                    Elevating Brands{' '}
+                    Uniting Africa{' '}
                     <span
                         style={{
                             background: 'var(--sp-gradient-primary)',
@@ -81,9 +81,8 @@ const HeroSection = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.6 }}
                 >
-                    3D sports advertising, instadia branding, and strategic consulting
-                    that puts your brand at the heart of the action — across cricket,
-                    football, rugby, and motor racing.
+                    From the electric atmosphere of the Ghana Premier League to the global stage.
+                    We are your premier source for live coverage, analytics, and grassroots scouting.
                 </motion.p>
 
                 <motion.div
@@ -92,7 +91,7 @@ const HeroSection = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.8 }}
                 >
-                    <Link to="/contact">
+                    <Link to="/editorial">
                         <Button
                             size="lg"
                             className="px-8 py-3 text-base font-semibold rounded-full"
@@ -102,10 +101,10 @@ const HeroSection = () => {
                                 border: 'none',
                             }}
                         >
-                            Get Started
+                            Read Latest News
                         </Button>
                     </Link>
-                    <Link to="/portfolio">
+                    <Link to="/services">
                         <Button
                             variant="outline"
                             size="lg"
@@ -116,7 +115,7 @@ const HeroSection = () => {
                                 background: 'transparent',
                             }}
                         >
-                            View Our Work
+                            View Match Center
                         </Button>
                     </Link>
                 </motion.div>

@@ -1,214 +1,214 @@
 [
     {
-        "id": "3d-advertising",
-        "title": "3D Sports Advertising",
-        "shortTitle": "3D Advertising",
-        "icon": "FiTarget",
+        "id": "live-match-coverage",
+        "title": "Live Match Coverage",
+        "shortTitle": "Match Coverage",
+        "icon": "FiMonitor",
         "accentColor": "--sp-color-primary",
-        "heroImage": "/assets/images/services/3d-hero.webp",
-        "shortDescription": "Place your sponsorship brand in a 3D perspective on or around the field of play.",
-        "fullDescription": "Our 3D Sports Advertising service places your brand in a stunning three-dimensional perspective directly on or around the field of play. This innovative approach ensures your brand stands out and benefits from maximum exposure during live TV broadcasts, highlight reels, and social media coverage.",
+        "heroImage": "https://images.unsplash.com/photo-1522770179533-24471fcdba45?auto=format&fit=crop&q=80&w=2000",
+        "shortDescription": "Comprehensive broadcast and digital coverage of premier African sporting events.",
+        "fullDescription": "We bring the excitement of African sports to the world through high-definition live broadcasts and real-time digital streams. From the intense rivalries of the Ghana Premier League to continental athletics championships, our production quality ensures fans never miss a moment.",
         "features": [
             {
-                "title": "Live TV Exposure",
-                "description": "Your brand appears in 3D during live broadcast coverage, reaching millions of viewers worldwide.",
+                "title": "HD Broadcasting",
+                "description": "State-of-the-art production for television and online streaming platforms.",
                 "icon": "FiTv"
             },
             {
-                "title": "Social Media Amplification",
-                "description": "Eye-catching 3D visuals generate organic social media shares and engagement.",
-                "icon": "FiShare2"
+                "title": "Real-time Stats",
+                "description": "Live statistical overlays and analysis during match play.",
+                "icon": "FiBarChart2"
             },
             {
-                "title": "Highlight Reel Inclusion",
-                "description": "Brands remain visible in replays and highlight packages for extended exposure.",
-                "icon": "FiFilm"
+                "title": "Multi-Cam Experience",
+                "description": "Immersive viewing angles capturing every tackle, goal, and sprint.",
+                "icon": "FiCamera"
             },
             {
-                "title": "Custom Placement",
-                "description": "Strategic positioning tailored to each sport and venue for maximum impact.",
-                "icon": "FiMapPin"
-            }
-        ],
-        "sportExamples": [
-            {
-                "sport": "Cricket",
-                "description": "3D camera carpets on the pitch and mid-wicket logos visible during broadcasts.",
-                "image": "/assets/images/services/3d-cricket.webp"
-            },
-            {
-                "sport": "Football",
-                "description": "3D camera carpets near goal posts and corner flags for maximum TV visibility.",
-                "image": "/assets/images/services/3d-football.webp"
-            },
-            {
-                "sport": "Rugby",
-                "description": "In-goal area 3D branding and try-line camera carpets for broadcast impact.",
-                "image": "/assets/images/services/3d-rugby.webp"
-            }
-        ],
-        "process": [
-            {
-                "step": 1,
-                "title": "Consultation",
-                "description": "We assess your brand goals and target audience."
-            },
-            {
-                "step": 2,
-                "title": "Design & Placement",
-                "description": "Our team designs the 3D placement for optimal visibility."
-            },
-            {
-                "step": 3,
-                "title": "Implementation",
-                "description": "We install and configure the 3D branding at the venue."
-            },
-            {
-                "step": 4,
-                "title": "Measurement",
-                "description": "Post-event analysis of brand exposure and reach."
-            }
-        ]
-    },
-    {
-        "id": "instadia",
-        "title": "Instadia Branding",
-        "shortTitle": "Instadia",
-        "icon": "FiMonitor",
-        "accentColor": "--sp-color-secondary",
-        "heroImage": "/assets/images/services/instadia-hero.webp",
-        "shortDescription": "Modern banners and perimeter boards to boost brand visibility at sports events.",
-        "fullDescription": "Our Instadia Branding solutions offer modern, eye-catching banners and LED perimeter boards designed to maximize your brand's visibility at live sporting events. From football stadiums to cricket grounds, we ensure your brand captures attention at every angle.",
-        "features": [
-            {
-                "title": "LED Perimeter Boards",
-                "description": "Dynamic LED displays that rotate your brand throughout the match.",
-                "icon": "FiZap"
-            },
-            {
-                "title": "Static Banners",
-                "description": "High-quality static banners positioned at strategic points around the venue.",
-                "icon": "FiImage"
-            },
-            {
-                "title": "Digital Integration",
-                "description": "Seamless integration with broadcast graphics for enhanced visibility.",
-                "icon": "FiLayers"
-            },
-            {
-                "title": "Multi-Sport Coverage",
-                "description": "Solutions for football, cricket, athletics, and more.",
-                "icon": "FiGlobe"
+                "title": "Commentary Team",
+                "description": "Expert analysis from former players and seasoned sports journalists.",
+                "icon": "FiMic"
             }
         ],
         "sportExamples": [
             {
                 "sport": "Football",
-                "description": "Perimeter LED boards and tunnel branding for premier league matches.",
-                "image": "/assets/images/services/instadia-football.webp"
+                "description": "Full match coverage of GPL, FA Cup, and regional tournaments.",
+                "image": "https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?auto=format&fit=crop&q=80&w=1000"
             },
             {
-                "sport": "Cricket",
-                "description": "Boundary rope branding and sight screen ads for international matches.",
-                "image": "/assets/images/services/instadia-cricket.webp"
+                "sport": "Boxing",
+                "description": "Ringside coverage of title fights from the Bukom Boxing Arena.",
+                "image": "https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?auto=format&fit=crop&q=80&w=1000"
             },
             {
                 "sport": "Athletics",
-                "description": "Track-side banners and finish-line branding for global athletics events.",
-                "image": "/assets/images/services/instadia-athletics.webp"
+                "description": "Track and field event coverage focusing on emerging sprint talent.",
+                "image": "https://images.unsplash.com/photo-1552674605-5d28c4e14f0c?auto=format&fit=crop&q=80&w=1000"
             }
         ],
         "process": [
             {
                 "step": 1,
-                "title": "Brief & Strategy",
-                "description": "Understanding your branding objectives and event selection."
+                "title": "Pre-Event Planning",
+                "description": "Logistics and technical setup for venue coverage."
             },
             {
                 "step": 2,
-                "title": "Creative Design",
-                "description": "Designing impactful visuals tailored to the venue."
+                "title": "Live Production",
+                "description": "On-site filming, direction, and feed management."
             },
             {
                 "step": 3,
-                "title": "Production & Install",
-                "description": "Manufacturing and installing branded elements on-site."
+                "title": "Distribution",
+                "description": "Broadcasting to TV partners and digital platforms."
             },
             {
                 "step": 4,
-                "title": "Reporting",
-                "description": "Post-event visibility and reach analytics."
+                "title": "Highlights",
+                "description": "Post-match editing for news and social media packages."
             }
         ]
     },
     {
-        "id": "brand-strategy",
-        "title": "Brand Strategy Consulting",
-        "shortTitle": "Brand Strategy",
+        "id": "gpl-analytics",
+        "title": "GPL Analytics",
+        "shortTitle": "GPL Analytics",
         "icon": "FiTrendingUp",
-        "accentColor": "--sp-color-accent",
-        "heroImage": "/assets/images/services/strategy-hero.webp",
-        "shortDescription": "Expert consulting to manage your brand and enhance its value at sporting events.",
-        "fullDescription": "Our Brand Strategy Consulting helps clients create a powerful, cohesive brand identity that resonates in the sports arena. We combine market research, creative storytelling, and strategic positioning to build brands that leave a lasting impression on audiences worldwide.",
+        "accentColor": "--sp-color-secondary",
+        "heroImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2000",
+        "shortDescription": "Advanced data analysis and performance metrics for the Ghana Premier League.",
+        "fullDescription": "Our GPL Analytics service provides clubs, scouts, and fans with deep insights into team performance and player development. We use cutting-edge tracking technology to dissect every pass, movement, and tactical decision in the Ghana Premier League.",
         "features": [
             {
-                "title": "Market Research",
-                "description": "Deep analysis of target demographics and competitive landscape.",
-                "icon": "FiSearch"
+                "title": "Player Tracking",
+                "description": "GPS and heat maps showing player movement and work rate.",
+                "icon": "FiMapPin"
             },
             {
-                "title": "Brand Positioning",
-                "description": "Crafting a unique brand narrative that resonates with sports fans.",
-                "icon": "FiCompass"
+                "title": "Tactical Analysis",
+                "description": "Breakdowns of team formations, pressing traps, and transition play.",
+                "icon": "FiActivity"
             },
             {
-                "title": "Campaign Planning",
-                "description": "End-to-end campaign strategy from concept to execution.",
-                "icon": "FiCalendar"
+                "title": "Scouting Reports",
+                "description": "Data-driven profiles for recruitment and talent identification.",
+                "icon": "FiUserCheck"
             },
             {
-                "title": "ROI Analysis",
-                "description": "Measuring brand impact and return on marketing investment.",
-                "icon": "FiBarChart2"
+                "title": "Fan Engagement",
+                "description": "Interactive stats and visualizations for enhancing the fan experience.",
+                "icon": "FiSmartphone"
             }
         ],
         "sportExamples": [
             {
-                "sport": "Cricket",
-                "description": "IPL and international cricket sponsorship strategy and execution.",
-                "image": "/assets/images/services/strategy-cricket.webp"
+                "sport": "Club Strategy",
+                "description": "Helping coaches optimize tactics based on opponent analysis.",
+                "image": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&q=80&w=1000"
             },
             {
-                "sport": "Football",
-                "description": "Premier league and Champions League brand partnership consulting.",
-                "image": "/assets/images/services/strategy-football.webp"
+                "sport": "Player Development",
+                "description": "Performance benchmarks for academy graduates entering the first team.",
+                "image": "https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&q=80&w=1000"
             },
             {
-                "sport": "Motor Racing",
-                "description": "Formula racing team and event sponsorship strategy.",
-                "image": "/assets/images/services/strategy-motorsport.webp"
+                "sport": "Media Insights",
+                "description": "Providing pundits with statistical backing for matchday discussions.",
+                "image": "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&q=80&w=1000"
             }
         ],
         "process": [
             {
                 "step": 1,
-                "title": "Discovery",
-                "description": "Understanding your brand DNA, goals, and challenges."
+                "title": "Data Collection",
+                "description": "Capturing match data using video and sensors."
             },
             {
                 "step": 2,
-                "title": "Strategy Development",
-                "description": "Building a tailored brand strategy and activation plan."
+                "title": "Processing",
+                "description": "Analyzing raw data to generate actionable metrics."
             },
             {
                 "step": 3,
-                "title": "Creative Execution",
-                "description": "Developing brand assets and campaign materials."
+                "title": "Reporting",
+                "description": "Visualizing data for coaches, scouts, and media."
             },
             {
                 "step": 4,
-                "title": "Launch & Optimize",
-                "description": "Executing the campaign and iterating based on performance."
+                "title": "Consultation",
+                "description": "Discussing insights to drive performance improvements."
+            }
+        ]
+    },
+    {
+        "id": "grassroots-scouting",
+        "title": "Grassroots Scouting",
+        "shortTitle": "Scouting Network",
+        "icon": "FiTarget",
+        "accentColor": "--sp-color-accent",
+        "heroImage": "https://images.unsplash.com/photo-1511886929837-354d827aae26?auto=format&fit=crop&q=80&w=2000",
+        "shortDescription": "Unearthing the next generation of African sporting talent.",
+        "fullDescription": "We are committed to discovering hidden gems across the continent. Our Grassroots Scouting network connects talented young athletes from schools and academies with professional clubs and international opportunities, ensuring no talent goes unnoticed.",
+        "features": [
+            {
+                "title": "Academy Partnerships",
+                "description": "Collaborations with leading youth academies across West Africa.",
+                "icon": "FiUsers"
+            },
+            {
+                "title": "Showcase Events",
+                "description": "Organizing tournaments to display talent to international scouts.",
+                "icon": "FiStar"
+            },
+            {
+                "title": "Video Portfolios",
+                "description": "Creating professional highlight reels for aspiring athletes.",
+                "icon": "FiVideo"
+            },
+            {
+                "title": "Career Guidance",
+                "description": "Mentorship on navigating professional contracts and career paths.",
+                "icon": "FiCompass"
+            }
+        ],
+        "sportExamples": [
+            {
+                "sport": "Youth Football",
+                "description": "Scouting U17 tournaments for potential national team stars.",
+                "image": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?auto=format&fit=crop&q=80&w=1000"
+            },
+            {
+                "sport": "School Athletics",
+                "description": "Identifying sprint and endurance talent in inter-school competitions.",
+                "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=1000"
+            },
+            {
+                "sport": "Basketball",
+                "description": "Finding tall, athletic prospects for development camps.",
+                "image": "https://images.unsplash.com/photo-1546519638-68e109498ee2?auto=format&fit=crop&q=80&w=1000"
+            }
+        ],
+        "process": [
+            {
+                "step": 1,
+                "title": "Identification",
+                "description": "Scouts attend local matches and school events."
+            },
+            {
+                "step": 2,
+                "title": "Assessment",
+                "description": "Detailed evaluation of technical and physical attributes."
+            },
+            {
+                "step": 3,
+                "title": "Profiling",
+                "description": "Building a comprehensive player profile and video database."
+            },
+            {
+                "step": 4,
+                "title": "Placement",
+                "description": "Facilitating trials and introductions to professional teams."
             }
         ]
     }

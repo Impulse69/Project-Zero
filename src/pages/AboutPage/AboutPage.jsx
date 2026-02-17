@@ -8,9 +8,9 @@ const AboutPage = () => {
     return (
         <>
             <PageHero
-                title="About Us"
-                subtitle="We connect brands with fans through the power of sport."
-                bgImage="" // Can add a specific about-hero image here
+                title="Our Mission"
+                subtitle="From the streets of Accra to the world stage, we are redefining African sports media."
+                bgImage="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&q=80&w=2000"
             />
             <CompanyStory />
             <ValuesSection />

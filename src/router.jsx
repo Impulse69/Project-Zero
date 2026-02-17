@@ -39,7 +39,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/services',
-                element: <Navigate to="/services/3d-advertising" replace />,
+                element: <Navigate to="/services/live-match-coverage" replace />,
             },
             {
                 path: '/services/:serviceSlug',

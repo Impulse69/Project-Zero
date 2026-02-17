@@ -1,15 +1,16 @@
 {
     "mission": {
         "title": "Our Mission",
-        "content": "To revolutionize sports marketing by blending immersive technology with strategic branding, creating unforgettable connection points between teams, brands, and fans worldwide."
+        "content": "To deliver the pulse of African sports to a global audience through world-class broadcasting, data analytics, and talent development."
     },
     "vision": {
         "title": "Our Vision",
-        "content": "We envision a world where every sporting moment is enhanced by intelligent, non-intrusive, and highly engaging brand experiences that add value to the game."
+        "content": "To be the leading voice and visual storyteller of African athletics, empowering the next generation of stars."
     },
     "story": [
-        "Founded in 2020, Sports Panorama began with a simple observation: sports advertising was becoming static in a dynamic world.",
-        "Our team of engineers, designers, and sports enthusiasts came together to build a platform that allows brands to be part of the action, not just a distraction from it."
+        "Sports Panorama Africa began with a simple yet powerful belief: African sports deserve a spotlight that matches the passion of its fans. For too long, the stories of our local leagues, grassroots tournaments, and rising stars went untold or underrepresented.",
+        "Founded in Accra, we set out to change the narrative. We built a multi-platform media powerhouse dedicated to covering the Ghana Premier League, national teams, and the vibrant world of school athletics. Our team of journalists, analysts, and producers work tirelessly to bring you closer to the action.",
+        "Today, Sports Panorama is more than just a media outlet; we are a community. From our data-driven 'GPL Analytics' to our 'Grassroots to Glory' scouting network, we are deeply embedded in the ecosystem of African sports, driving growth and celebrating excellence every step of the way."
     ],
     "values": [
         {
