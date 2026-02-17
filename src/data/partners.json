@@ -1,0 +1,42 @@
+[
+    {
+        "id": "p1",
+        "name": "Global Sports Network",
+        "logo": "/assets/images/partners/gsn.svg"
+    },
+    {
+        "id": "p2",
+        "name": "Stadium Solutions",
+        "logo": "/assets/images/partners/stadium.svg"
+    },
+    {
+        "id": "p3",
+        "name": "BrandVision Media",
+        "logo": "/assets/images/partners/brandvision.svg"
+    },
+    {
+        "id": "p4",
+        "name": "SportTech International",
+        "logo": "/assets/images/partners/sporttech.svg"
+    },
+    {
+        "id": "p5",
+        "name": "Digital Arena",
+        "logo": "/assets/images/partners/digitalarena.svg"
+    },
+    {
+        "id": "p6",
+        "name": "ProLeague Marketing",
+        "logo": "/assets/images/partners/proleague.svg"
+    },
+    {
+        "id": "p7",
+        "name": "Victory Brands",
+        "logo": "/assets/images/partners/victory.svg"
+    },
+    {
+        "id": "p8",
+        "name": "Champion Media Group",
+        "logo": "/assets/images/partners/champion.svg"
+    }
+]

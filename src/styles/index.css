@@ -1,0 +1,9 @@
+/* ══════════════════════════════════════════════════════════════════
+   MAIN STYLESHEET — Imports all style modules
+   ══════════════════════════════════════════════════════════════════ */
+
+@import './variables.css';
+@import './reset.css';
+@import './typography.css';
+@import './utilities.css';
+@import './animations.css';

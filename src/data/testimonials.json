@@ -1,0 +1,26 @@
+[
+    {
+        "id": "testimonial-1",
+        "quote": "Sports Panorama transformed our brand visibility in the Premier League. Their 3D advertising solutions are truly next-level.",
+        "author": "Michael Thompson",
+        "role": "Marketing Director",
+        "company": "Global Beverages Inc.",
+        "photo": "/assets/images/testimonials/michael.webp"
+    },
+    {
+        "id": "testimonial-2",
+        "quote": "The instadia branding across our IPL venues was flawless. Consistent quality and maximum impact at every ground.",
+        "author": "Anita Desai",
+        "role": "Head of Partnerships",
+        "company": "TechVista Solutions",
+        "photo": "/assets/images/testimonials/anita.webp"
+    },
+    {
+        "id": "testimonial-3",
+        "quote": "Their brand strategy consulting helped us build an authentic connection with the rugby community. Highly recommend.",
+        "author": "Robert Welsh",
+        "role": "CMO",
+        "company": "Sterling Financial",
+        "photo": "/assets/images/testimonials/robert.webp"
+    }
+]

@@ -1,0 +1,215 @@
+[
+    {
+        "id": "3d-advertising",
+        "title": "3D Sports Advertising",
+        "shortTitle": "3D Advertising",
+        "icon": "FiTarget",
+        "accentColor": "--sp-color-primary",
+        "heroImage": "/assets/images/services/3d-hero.webp",
+        "shortDescription": "Place your sponsorship brand in a 3D perspective on or around the field of play.",
+        "fullDescription": "Our 3D Sports Advertising service places your brand in a stunning three-dimensional perspective directly on or around the field of play. This innovative approach ensures your brand stands out and benefits from maximum exposure during live TV broadcasts, highlight reels, and social media coverage.",
+        "features": [
+            {
+                "title": "Live TV Exposure",
+                "description": "Your brand appears in 3D during live broadcast coverage, reaching millions of viewers worldwide.",
+                "icon": "FiTv"
+            },
+            {
+                "title": "Social Media Amplification",
+                "description": "Eye-catching 3D visuals generate organic social media shares and engagement.",
+                "icon": "FiShare2"
+            },
+            {
+                "title": "Highlight Reel Inclusion",
+                "description": "Brands remain visible in replays and highlight packages for extended exposure.",
+                "icon": "FiFilm"
+            },
+            {
+                "title": "Custom Placement",
+                "description": "Strategic positioning tailored to each sport and venue for maximum impact.",
+                "icon": "FiMapPin"
+            }
+        ],
+        "sportExamples": [
+            {
+                "sport": "Cricket",
+                "description": "3D camera carpets on the pitch and mid-wicket logos visible during broadcasts.",
+                "image": "/assets/images/services/3d-cricket.webp"
+            },
+            {
+                "sport": "Football",
+                "description": "3D camera carpets near goal posts and corner flags for maximum TV visibility.",
+                "image": "/assets/images/services/3d-football.webp"
+            },
+            {
+                "sport": "Rugby",
+                "description": "In-goal area 3D branding and try-line camera carpets for broadcast impact.",
+                "image": "/assets/images/services/3d-rugby.webp"
+            }
+        ],
+        "process": [
+            {
+                "step": 1,
+                "title": "Consultation",
+                "description": "We assess your brand goals and target audience."
+            },
+            {
+                "step": 2,
+                "title": "Design & Placement",
+                "description": "Our team designs the 3D placement for optimal visibility."
+            },
+            {
+                "step": 3,
+                "title": "Implementation",
+                "description": "We install and configure the 3D branding at the venue."
+            },
+            {
+                "step": 4,
+                "title": "Measurement",
+                "description": "Post-event analysis of brand exposure and reach."
+            }
+        ]
+    },
+    {
+        "id": "instadia",
+        "title": "Instadia Branding",
+        "shortTitle": "Instadia",
+        "icon": "FiMonitor",
+        "accentColor": "--sp-color-secondary",
+        "heroImage": "/assets/images/services/instadia-hero.webp",
+        "shortDescription": "Modern banners and perimeter boards to boost brand visibility at sports events.",
+        "fullDescription": "Our Instadia Branding solutions offer modern, eye-catching banners and LED perimeter boards designed to maximize your brand's visibility at live sporting events. From football stadiums to cricket grounds, we ensure your brand captures attention at every angle.",
+        "features": [
+            {
+                "title": "LED Perimeter Boards",
+                "description": "Dynamic LED displays that rotate your brand throughout the match.",
+                "icon": "FiZap"
+            },
+            {
+                "title": "Static Banners",
+                "description": "High-quality static banners positioned at strategic points around the venue.",
+                "icon": "FiImage"
+            },
+            {
+                "title": "Digital Integration",
+                "description": "Seamless integration with broadcast graphics for enhanced visibility.",
+                "icon": "FiLayers"
+            },
+            {
+                "title": "Multi-Sport Coverage",
+                "description": "Solutions for football, cricket, athletics, and more.",
+                "icon": "FiGlobe"
+            }
+        ],
+        "sportExamples": [
+            {
+                "sport": "Football",
+                "description": "Perimeter LED boards and tunnel branding for premier league matches.",
+                "image": "/assets/images/services/instadia-football.webp"
+            },
+            {
+                "sport": "Cricket",
+                "description": "Boundary rope branding and sight screen ads for international matches.",
+                "image": "/assets/images/services/instadia-cricket.webp"
+            },
+            {
+                "sport": "Athletics",
+                "description": "Track-side banners and finish-line branding for global athletics events.",
+                "image": "/assets/images/services/instadia-athletics.webp"
+            }
+        ],
+        "process": [
+            {
+                "step": 1,
+                "title": "Brief & Strategy",
+                "description": "Understanding your branding objectives and event selection."
+            },
+            {
+                "step": 2,
+                "title": "Creative Design",
+                "description": "Designing impactful visuals tailored to the venue."
+            },
+            {
+                "step": 3,
+                "title": "Production & Install",
+                "description": "Manufacturing and installing branded elements on-site."
+            },
+            {
+                "step": 4,
+                "title": "Reporting",
+                "description": "Post-event visibility and reach analytics."
+            }
+        ]
+    },
+    {
+        "id": "brand-strategy",
+        "title": "Brand Strategy Consulting",
+        "shortTitle": "Brand Strategy",
+        "icon": "FiTrendingUp",
+        "accentColor": "--sp-color-accent",
+        "heroImage": "/assets/images/services/strategy-hero.webp",
+        "shortDescription": "Expert consulting to manage your brand and enhance its value at sporting events.",
+        "fullDescription": "Our Brand Strategy Consulting helps clients create a powerful, cohesive brand identity that resonates in the sports arena. We combine market research, creative storytelling, and strategic positioning to build brands that leave a lasting impression on audiences worldwide.",
+        "features": [
+            {
+                "title": "Market Research",
+                "description": "Deep analysis of target demographics and competitive landscape.",
+                "icon": "FiSearch"
+            },
+            {
+                "title": "Brand Positioning",
+                "description": "Crafting a unique brand narrative that resonates with sports fans.",
+                "icon": "FiCompass"
+            },
+            {
+                "title": "Campaign Planning",
+                "description": "End-to-end campaign strategy from concept to execution.",
+                "icon": "FiCalendar"
+            },
+            {
+                "title": "ROI Analysis",
+                "description": "Measuring brand impact and return on marketing investment.",
+                "icon": "FiBarChart2"
+            }
+        ],
+        "sportExamples": [
+            {
+                "sport": "Cricket",
+                "description": "IPL and international cricket sponsorship strategy and execution.",
+                "image": "/assets/images/services/strategy-cricket.webp"
+            },
+            {
+                "sport": "Football",
+                "description": "Premier league and Champions League brand partnership consulting.",
+                "image": "/assets/images/services/strategy-football.webp"
+            },
+            {
+                "sport": "Motor Racing",
+                "description": "Formula racing team and event sponsorship strategy.",
+                "image": "/assets/images/services/strategy-motorsport.webp"
+            }
+        ],
+        "process": [
+            {
+                "step": 1,
+                "title": "Discovery",
+                "description": "Understanding your brand DNA, goals, and challenges."
+            },
+            {
+                "step": 2,
+                "title": "Strategy Development",
+                "description": "Building a tailored brand strategy and activation plan."
+            },
+            {
+                "step": 3,
+                "title": "Creative Execution",
+                "description": "Developing brand assets and campaign materials."
+            },
+            {
+                "step": 4,
+                "title": "Launch & Optimize",
+                "description": "Executing the campaign and iterating based on performance."
+            }
+        ]
+    }
+]

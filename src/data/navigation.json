@@ -1,0 +1,78 @@
+{
+    "mainNav": [
+        {
+            "label": "Home",
+            "to": "/"
+        },
+        {
+            "label": "About",
+            "to": "/about"
+        },
+        {
+            "label": "Services",
+            "to": "/services",
+            "children": [
+                {
+                    "label": "3D Sports Advertising",
+                    "to": "/services/3d-advertising",
+                    "icon": "FiTarget",
+                    "description": "Place your brand in stunning 3D on the field of play"
+                },
+                {
+                    "label": "Instadia Branding",
+                    "to": "/services/instadia",
+                    "icon": "FiMonitor",
+                    "description": "Modern banners and perimeter boards at sporting events"
+                },
+                {
+                    "label": "Brand Strategy Consulting",
+                    "to": "/services/brand-strategy",
+                    "icon": "FiTrendingUp",
+                    "description": "Expert consulting to enhance your brand value"
+                }
+            ]
+        },
+        {
+            "label": "Portfolio",
+            "to": "/portfolio"
+        },
+        {
+            "label": "Contact",
+            "to": "/contact"
+        }
+    ],
+    "footerNav": {
+        "quickLinks": [
+            {
+                "label": "Home",
+                "to": "/"
+            },
+            {
+                "label": "About Us",
+                "to": "/about"
+            },
+            {
+                "label": "Portfolio",
+                "to": "/portfolio"
+            },
+            {
+                "label": "Contact",
+                "to": "/contact"
+            }
+        ],
+        "services": [
+            {
+                "label": "3D Sports Advertising",
+                "to": "/services/3d-advertising"
+            },
+            {
+                "label": "Instadia Branding",
+                "to": "/services/instadia"
+            },
+            {
+                "label": "Brand Strategy",
+                "to": "/services/brand-strategy"
+            }
+        ]
+    }
+}

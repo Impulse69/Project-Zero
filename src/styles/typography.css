@@ -1,0 +1,82 @@
+/* ══════════════════════════════════════════════════════════════════
+   TYPOGRAPHY — Font Imports & Global Type Styles
+   ══════════════════════════════════════════════════════════════════ */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: var(--sp-font-body);
+    font-size: var(--sp-text-base);
+    font-weight: var(--sp-font-regular);
+    line-height: var(--sp-leading-normal);
+    color: var(--sp-text-primary);
+    background-color: var(--sp-bg-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--sp-font-display);
+    font-weight: var(--sp-font-bold);
+    line-height: var(--sp-leading-snug);
+    color: var(--sp-text-primary);
+}
+
+h1 {
+    font-size: var(--sp-text-5xl);
+    line-height: var(--sp-leading-tight);
+}
+
+h2 {
+    font-size: var(--sp-text-4xl);
+}
+
+h3 {
+    font-size: var(--sp-text-3xl);
+}
+
+h4 {
+    font-size: var(--sp-text-2xl);
+}
+
+h5 {
+    font-size: var(--sp-text-xl);
+}
+
+h6 {
+    font-size: var(--sp-text-lg);
+}
+
+p {
+    margin-bottom: var(--sp-space-4);
+}
+
+a {
+    color: var(--sp-text-link);
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--sp-color-primary);
+}
+
+strong,
+b {
+    font-weight: var(--sp-font-semibold);
+}
+
+small {
+    font-size: var(--sp-text-sm);
+}
+
+code {
+    font-family: var(--sp-font-mono);
+    font-size: 0.9em;
+    background: var(--sp-bg-surface);
+    padding: 0.2em 0.4em;
+    border-radius: var(--sp-radius-sm);
+}

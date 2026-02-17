@@ -1,0 +1,38 @@
+[
+    {
+        "id": "cricket",
+        "name": "Cricket",
+        "slug": "cricket",
+        "description": "From IPL to international test matches, we bring brands to the crease with innovative pitch-side advertising and sponsorship solutions.",
+        "image": "/assets/images/sports/cricket.webp",
+        "accentColor": "--sp-sport-cricket",
+        "icon": "🏏"
+    },
+    {
+        "id": "football",
+        "name": "Football",
+        "slug": "football",
+        "description": "Maximize brand exposure at the world's most-watched sport with perimeter boards, 3D camera carpets, and strategic sponsorships.",
+        "image": "/assets/images/sports/football.webp",
+        "accentColor": "--sp-sport-football",
+        "icon": "⚽"
+    },
+    {
+        "id": "rugby",
+        "name": "Rugby",
+        "slug": "rugby",
+        "description": "From in-goal branding to try-line camera carpets, capture the intensity of rugby with high-impact brand placements.",
+        "image": "/assets/images/sports/rugby.webp",
+        "accentColor": "--sp-sport-rugby",
+        "icon": "🏉"
+    },
+    {
+        "id": "motorsport",
+        "name": "Motor Racing",
+        "slug": "motorsport",
+        "description": "High-speed brand exposure through track-side advertising, team sponsorships, and broadcast-integrated placements.",
+        "image": "/assets/images/sports/motorsport.webp",
+        "accentColor": "--sp-sport-motorsport",
+        "icon": "🏎️"
+    }
+]
