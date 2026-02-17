@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, Navigate } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import MainLayout from '@layouts/MainLayout';
 import Preloader from '@components/common/Preloader';
@@ -36,6 +36,10 @@ export const router = createBrowserRouter([
                         <AboutPage />
                     </SuspenseWrapper>
                 ),
+            },
+            {
+                path: '/services',
+                element: <Navigate to="/services/3d-advertising" replace />,
             },
             {
                 path: '/services/:serviceSlug',
