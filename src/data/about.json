@@ -1,0 +1,34 @@
+{
+    "mission": {
+        "title": "Our Mission",
+        "content": "To revolutionize sports marketing by blending immersive technology with strategic branding, creating unforgettable connection points between teams, brands, and fans worldwide."
+    },
+    "vision": {
+        "title": "Our Vision",
+        "content": "We envision a world where every sporting moment is enhanced by intelligent, non-intrusive, and highly engaging brand experiences that add value to the game."
+    },
+    "story": [
+        "Founded in 2020, Sports Panorama began with a simple observation: sports advertising was becoming static in a dynamic world.",
+        "Our team of engineers, designers, and sports enthusiasts came together to build a platform that allows brands to be part of the action, not just a distraction from it."
+    ],
+    "values": [
+        {
+            "id": "innovation",
+            "title": "Unrelenting Innovation",
+            "description": "We never settle for 'good enough'. We push the boundaries of what technology can do in live sports.",
+            "icon": "Cpu"
+        },
+        {
+            "id": "passion",
+            "title": "Passion for the Game",
+            "description": "We are fans first. We treat every sport, league, and team with the respect and excitement it deserves.",
+            "icon": "Heart"
+        },
+        {
+            "id": "integrity",
+            "title": "Integrity & Trust",
+            "description": "We build lasting partnerships based on transparency, reliability, and delivering on our promises.",
+            "icon": "ShieldCheck"
+        }
+    ]
+}

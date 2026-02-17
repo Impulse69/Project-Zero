@@ -160,3 +160,4 @@ src/
 | `SEO_AND_PERFORMANCE.md` | SEO meta, a11y, and performance budgets              |
 | `API_AND_DATA.md`        | Data models, mock data strategy, content structure   |
 | `ROUTING.md`             | Route map, navigation hierarchy, lazy loading plan   |
+| `PROGRESSIVE_BUILD.md`   | **Phased build strategy** (Foundation → Atoms → Pages)|

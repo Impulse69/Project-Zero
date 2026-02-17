@@ -1,25 +1,40 @@
 import { useParams, Navigate } from 'react-router-dom';
-import { useDocumentTitle } from '@hooks/useDocumentTitle';
-import services from '@data/services.json';
-import styles from './ServicePage.module.css';
+import PageHero from '@/components/layout/PageHero';
+import ProcessTimeline from '@/components/services/ProcessTimeline';
+import FeaturesGrid from '@/components/services/FeaturesGrid';
+import SportExamples from '@/components/services/SportExamples';
+import CTABanner from '@/components/home/CTABanner';
+import servicesData from '@/data/services.json';
 
 const ServicePage = () => {
     const { serviceSlug } = useParams();
-    const service = services.find(s => s.id === serviceSlug);
+    const service = servicesData.find(s => s.id === serviceSlug);
 
-    useDocumentTitle(service?.title || 'Service');
-
+    // If slug doesn't match any service, show 404 (handled by Router or Redirect)
+    // Here we can return Navigate to 404
     if (!service) {
         return <Navigate to="/404" replace />;
     }
 
     return (
-        <div className={styles.page}>
-            <div className="container">
-                <h1>{service.title}</h1>
-                <p>{service.fullDescription}</p>
-            </div>
-        </div>
+        <>
+            <PageHero
+                title={service.title}
+                subtitle={service.shortDescription}
+                bgImage={service.heroImage}
+            />
+
+            {/* Intro / Description Section could go here if fullDescription > 100 words */}
+            {/* But FeaturesGrid usually covers "Why Choose This" */}
+
+            <FeaturesGrid features={service.features} />
+
+            <SportExamples examples={service.sportExamples} />
+
+            <ProcessTimeline steps={service.process} />
+
+            <CTABanner />
+        </>
     );
 };
 

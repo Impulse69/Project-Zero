@@ -1,18 +1,27 @@
 import { useDocumentTitle } from '@hooks/useDocumentTitle';
-import styles from './HomePage.module.css';
+import HeroSection from '@components/home/HeroSection';
+import ServicesOverview from '@components/home/ServicesOverview';
+import AboutSnapshot from '@components/home/AboutSnapshot';
+import SportsCategories from '@components/home/SportsCategories';
+import PortfolioHighlights from '@components/home/PortfolioHighlights';
+import Testimonials from '@components/home/Testimonials';
+import CTABanner from '@components/home/CTABanner';
+import PartnersMarquee from '@components/home/PartnersMarquee';
 
 const HomePage = () => {
     useDocumentTitle('Home');
 
     return (
-        <div className={styles.page}>
-            <div className="container">
-                <section className={styles.hero}>
-                    <h1>Welcome to Sports Panorama</h1>
-                    <p>Elevating Brands Through Sport</p>
-                </section>
-            </div>
-        </div>
+        <>
+            <HeroSection />
+            <ServicesOverview />
+            <AboutSnapshot />
+            <SportsCategories />
+            <PortfolioHighlights />
+            <Testimonials />
+            <CTABanner />
+            <PartnersMarquee />
+        </>
     );
 };
 

@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { SiteConfigProvider } from '@context/SiteConfigContext';
 import Navbar from '@components/layout/Navbar';
 import Footer from '@components/layout/Footer';
+import ScrollToTop from '@components/common/ScrollToTop';
 import styles from './MainLayout.module.css';
 
 const MainLayout = () => {
@@ -21,9 +22,11 @@ const MainLayout = () => {
                     <Outlet />
                 </main>
                 <Footer />
+                <ScrollToTop />
             </div>
         </SiteConfigProvider>
     );
 };
 
 export default MainLayout;
+
