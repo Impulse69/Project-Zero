@@ -5,7 +5,7 @@
         "author": "Michael Thompson",
         "role": "Marketing Director",
         "company": "Global Beverages Inc.",
-        "photo": "/assets/images/testimonials/michael.webp"
+        "photo": "https://placehold.co/100x100?text=MT"
     },
     {
         "id": "testimonial-2",
@@ -13,7 +13,7 @@
         "author": "Anita Desai",
         "role": "Head of Partnerships",
         "company": "TechVista Solutions",
-        "photo": "/assets/images/testimonials/anita.webp"
+        "photo": "https://placehold.co/100x100?text=AD"
     },
     {
         "id": "testimonial-3",
@@ -21,6 +21,6 @@
         "author": "Robert Welsh",
         "role": "CMO",
         "company": "Sterling Financial",
-        "photo": "/assets/images/testimonials/robert.webp"
+        "photo": "https://placehold.co/100x100?text=RW"
     }
 ]

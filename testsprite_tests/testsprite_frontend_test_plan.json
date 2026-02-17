@@ -1,0 +1,732 @@
+[
+  {
+    "id": "TC001",
+    "title": "Navigate from Home to Services using the global navbar",
+    "description": "Verifies the Services link in the global navigation routes the user from Home to the Services page.",
+    "category": "Global Navigation",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Global navigation bar\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Services\" in the navigation bar"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/services\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Services\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC002",
+    "title": "Navigate from Home to Portfolio using the mobile menu",
+    "description": "Verifies the mobile menu opens and the Portfolio link routes to the Portfolio page.",
+    "category": "Global Navigation",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Open mobile menu"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Mobile navigation menu\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Portfolio\" in the mobile navigation menu"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/portfolio\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Portfolio\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC003",
+    "title": "Attempt to navigate from About to Contact when Contact link is non-functional",
+    "description": "Verifies that clicking Contact from About does not navigate away and the current page remains unchanged.",
+    "category": "Global Navigation",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /about"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/about\""
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Contact\" in the navigation bar"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/about\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Company\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC004",
+    "title": "Global navbar is visible on all primary pages",
+    "description": "Verifies the global navigation bar is present when visiting each main route.",
+    "category": "Global Navigation",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Global navigation bar\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"About\" in the navigation bar"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Global navigation bar\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Services\" in the navigation bar"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Global navigation bar\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Portfolio\" in the navigation bar"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Global navigation bar\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC005",
+    "title": "Navigate from Services to Contact using the global navbar",
+    "description": "Verifies the Contact link routes from Services to the Contact page.",
+    "category": "Global Navigation",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /services"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Global navigation bar\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Contact\" in the navigation bar"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/contact\""
+      }
+    ]
+  },
+  {
+    "id": "TC006",
+    "title": "Navigate from Portfolio to Home using the global navbar",
+    "description": "Verifies the Home link in the global navigation routes back to the landing page.",
+    "category": "Global Navigation",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /portfolio"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Global navigation bar\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Home\" in the navigation bar"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Testimonials\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC007",
+    "title": "Mobile menu can be opened and closed without navigating",
+    "description": "Verifies the mobile menu opens and can be dismissed, leaving the user on the same page.",
+    "category": "Global Navigation",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/\""
+      },
+      {
+        "type": "action",
+        "description": "Open mobile menu"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Mobile navigation menu\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Press \"Escape\" key"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Mobile navigation menu\" is not visible"
+      }
+    ]
+  },
+  {
+    "id": "TC008",
+    "title": "Mobile menu navigation to About works from Home",
+    "description": "Verifies selecting About from the mobile menu navigates to the About page.",
+    "category": "Global Navigation",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Open mobile menu"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"About\" in the mobile navigation menu"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/about\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Mission\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC009",
+    "title": "Submit contact form successfully with valid inputs",
+    "description": "Verifies a visitor can submit the contact form with valid name, email, and message and sees a success confirmation.",
+    "category": "Contact Form",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify page title contains \"Contact\""
+      },
+      {
+        "type": "action",
+        "description": "Type \"Alex Johnson\" into the Name field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"alex.johnson@example.com\" into the Email field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"Hi, I’m interested in learning more about your services. Please contact me.\" into the Message field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Submit\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Thank you\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC010",
+    "title": "Inline validation: invalid email format blocks submission",
+    "description": "Verifies that an invalid email shows an inline validation error after attempting to submit.",
+    "category": "Contact Form",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Contact form\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Type \"Taylor Smith\" into the Name field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"taylor.smith@\" into the Email field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"Please send me more information.\" into the Message field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Submit\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"valid email\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC011",
+    "title": "Required field validation: missing name shows inline error",
+    "description": "Verifies the form shows a required-field error when the name is missing and submit is clicked.",
+    "category": "Contact Form",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Contact form\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Type \"valid.user@example.com\" into the Email field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"Hello, please reach out.\" into the Message field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Submit\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Name\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"required\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC012",
+    "title": "Required field validation: missing email shows inline error",
+    "description": "Verifies the form shows a required-field error when the email is missing and submit is clicked.",
+    "category": "Contact Form",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Contact form\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Type \"Sam Patel\" into the Name field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"Hello, I’d like a callback.\" into the Message field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Submit\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Email\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"required\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC013",
+    "title": "Required field validation: missing message shows inline error",
+    "description": "Verifies the form shows a required-field error when the message is missing and submit is clicked.",
+    "category": "Contact Form",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Contact form\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Type \"Morgan Chen\" into the Name field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"morgan.chen@example.com\" into the Email field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Submit\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Message\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"required\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC014",
+    "title": "Correcting invalid email clears the validation error and allows submission",
+    "description": "Verifies a visitor can fix an invalid email and then successfully submit the form.",
+    "category": "Contact Form",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Contact form\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Type \"Casey Nguyen\" into the Name field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"casey.nguyen@\" into the Email field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Submit\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"valid email\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Type \"casey.nguyen@example.com\" into the Email field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Submit\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Thank you\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC015",
+    "title": "Form supports longer message content and still submits",
+    "description": "Verifies the message field accepts a longer message and submission still results in a visible confirmation.",
+    "category": "Contact Form",
+    "priority": "Low",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Contact form\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Type \"Riley Adams\" into the Name field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"riley.adams@example.com\" into the Email field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"Hello team, I’m reaching out regarding a potential project. We’re evaluating vendors for strategy, design, and implementation. Please share your process, estimated timelines, and how you typically scope engagements. Thank you.\" into the Message field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Submit\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Thank you\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC016",
+    "title": "Redirect from /services to the first service detail page",
+    "description": "Verifies that visiting the Services route redirects to the first service detail view and shows service detail content.",
+    "category": "Service Redirection",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /services"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/services\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL is not exactly \"/services\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Service detail\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Service title\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Service description\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC017",
+    "title": "Redirect happens automatically without user interaction",
+    "description": "Verifies that the /services redirect occurs automatically and the user does not remain on the list route.",
+    "category": "Service Redirection",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /services"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Services\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL is not exactly \"/services\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Service detail\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"No services found\" is not visible"
+      }
+    ]
+  },
+  {
+    "id": "TC018",
+    "title": "First service detail content is visible after redirection",
+    "description": "Verifies that after redirect, the first service detail view renders meaningful, visible content blocks.",
+    "category": "Service Redirection",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /services"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Service detail\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Service overview\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Key benefits\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Call to action\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC019",
+    "title": "Fallback to /services list when redirect target is missing",
+    "description": "Verifies that if the first service item cannot be resolved, the app shows the /services list page with a 'No services found' message.",
+    "category": "Service Redirection",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /services"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/services\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL is exactly \"/services\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"No services found\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Services list\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC020",
+    "title": "Fallback state does not show service detail UI",
+    "description": "Verifies that when the 'No services found' fallback is shown, service detail content is not displayed.",
+    "category": "Service Redirection",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /services"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL is exactly \"/services\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"No services found\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Service detail\" is not visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Service title\" is not visible"
+      }
+    ]
+  },
+  {
+    "id": "TC021",
+    "title": "Redirected service detail provides a path to contact",
+    "description": "Verifies that after redirecting to the first service detail view, the user can proceed to the Contact page through visible UI navigation.",
+    "category": "Service Redirection",
+    "priority": "Low",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /services"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Service detail\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Contact\" in the header navigation"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/contact\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Contact\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Contact form\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC022",
+    "title": "Redirect does not trap user from navigating to other top-level pages",
+    "description": "Verifies that after redirecting from /services, the user can navigate to another top-level route (Portfolio) using UI navigation.",
+    "category": "Service Redirection",
+    "priority": "Low",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /services"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Service detail\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Portfolio\" in the header navigation"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/portfolio\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Portfolio\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Case studies\" is visible"
+      }
+    ]
+  }
+]

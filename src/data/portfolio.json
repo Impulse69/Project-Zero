@@ -5,8 +5,8 @@
         "slug": "premier-league-3d",
         "category": "football",
         "service": "3d-advertising",
-        "thumbnail": "/assets/images/portfolio/pl-3d-thumb.webp",
-        "heroImage": "/assets/images/portfolio/pl-3d-hero.webp",
+        "thumbnail": "https://placehold.co/600x400?text=PL+Campaign",
+        "heroImage": "https://placehold.co/1200x600?text=Premier+League+Hero",
         "shortDescription": "3D camera carpet placement for a major beverage brand during Premier League matches.",
         "challenge": "The client needed maximum brand visibility during live Premier League broadcasts reaching 500M+ global viewers.",
         "solution": "We deployed 3D camera carpets near both goal posts, ensuring prominent placement during every goal and replay.",
@@ -16,9 +16,9 @@
             "Featured in 800+ highlight clips across social media"
         ],
         "gallery": [
-            "/assets/images/portfolio/pl-3d-1.webp",
-            "/assets/images/portfolio/pl-3d-2.webp",
-            "/assets/images/portfolio/pl-3d-3.webp"
+            "https://placehold.co/800x600?text=Gallery+1",
+            "https://placehold.co/800x600?text=Gallery+2",
+            "https://placehold.co/800x600?text=Gallery+3"
         ],
         "featured": true
     },
@@ -28,8 +28,8 @@
         "slug": "ipl-instadia",
         "category": "cricket",
         "service": "instadia",
-        "thumbnail": "/assets/images/portfolio/ipl-thumb.webp",
-        "heroImage": "/assets/images/portfolio/ipl-hero.webp",
+        "thumbnail": "https://placehold.co/600x400?text=IPL+Campaign",
+        "heroImage": "https://placehold.co/1200x600?text=IPL+Hero",
         "shortDescription": "Comprehensive instadia branding for a tech company across 5 IPL venues.",
         "challenge": "The client wanted consistent brand presence across multiple IPL venues with varied stadium configurations.",
         "solution": "We designed adaptable LED and static branding solutions that maintained brand consistency across all five venues.",
@@ -39,8 +39,8 @@
             "35% increase in website traffic during the IPL season"
         ],
         "gallery": [
-            "/assets/images/portfolio/ipl-1.webp",
-            "/assets/images/portfolio/ipl-2.webp"
+            "https://placehold.co/800x600?text=Gallery+1",
+            "https://placehold.co/800x600?text=Gallery+2"
         ],
         "featured": true
     },
@@ -50,8 +50,8 @@
         "slug": "six-nations-strategy",
         "category": "rugby",
         "service": "brand-strategy",
-        "thumbnail": "/assets/images/portfolio/rugby-thumb.webp",
-        "heroImage": "/assets/images/portfolio/rugby-hero.webp",
+        "thumbnail": "https://placehold.co/600x400?text=Rugby+Campaign",
+        "heroImage": "https://placehold.co/1200x600?text=Rugby+Hero",
         "shortDescription": "End-to-end brand strategy for a financial services company's Six Nations sponsorship.",
         "challenge": "Position a financial services brand as a credible rugby sponsor with authentic connection to the sport.",
         "solution": "We developed a multi-channel brand activation strategy centered around community rugby values.",
@@ -61,8 +61,8 @@
             "Partnership renewed for 3 additional years"
         ],
         "gallery": [
-            "/assets/images/portfolio/rugby-1.webp",
-            "/assets/images/portfolio/rugby-2.webp"
+            "https://placehold.co/800x600?text=Gallery+1",
+            "https://placehold.co/800x600?text=Gallery+2"
         ],
         "featured": true
     },
@@ -72,8 +72,8 @@
         "slug": "f1-trackside",
         "category": "motorsport",
         "service": "3d-advertising",
-        "thumbnail": "/assets/images/portfolio/f1-thumb.webp",
-        "heroImage": "/assets/images/portfolio/f1-hero.webp",
+        "thumbnail": "https://placehold.co/600x400?text=F1+Campaign",
+        "heroImage": "https://placehold.co/1200x600?text=F1+Hero",
         "shortDescription": "Strategic track-side advertising placement for a luxury watch brand at F1 Grand Prix events.",
         "challenge": "Achieve premium brand association with Formula 1's high-end audience across 3 Grand Prix events.",
         "solution": "Precision placement of 3D branded elements at key camera angles around pit lanes and podium areas.",
@@ -83,8 +83,8 @@
             "3 Grand Prix events covered"
         ],
         "gallery": [
-            "/assets/images/portfolio/f1-1.webp",
-            "/assets/images/portfolio/f1-2.webp"
+            "https://placehold.co/800x600?text=Gallery+1",
+            "https://placehold.co/800x600?text=Gallery+2"
         ],
         "featured": false
     }

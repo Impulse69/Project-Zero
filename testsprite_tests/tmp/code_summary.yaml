@@ -1,0 +1,52 @@
+version: "2"
+type: frontend
+tech_stack:
+  - Javascript
+  - React
+  - Vite
+  - TailwindCSS
+  - shadcn/ui
+  - Framer Motion
+routes:
+  - path: /
+    file: src/pages/HomePage/HomePage.jsx
+    auth_required: false
+    description: Landing page with hero, services overview, and testimonials
+  - path: /about
+    file: src/pages/AboutPage/AboutPage.jsx
+    auth_required: false
+    description: Company mission, vision, and team
+  - path: /services
+    file: src/pages/ServicesPage/ServicesPage.jsx
+    auth_required: false
+    description: Detailed list of services and capabilities
+  - path: /portfolio
+    file: src/pages/PortfolioPage/PortfolioPage.jsx
+    auth_required: false
+    description: Showcase of past projects and case studies
+  - path: /contact
+    file: src/pages/ContactPage/ContactPage.jsx
+    auth_required: false
+    description: Contact form and information
+features:
+  - name: Global Navigation
+    description: Responsive navbar with links to all main pages
+    files:
+      - src/components/layout/Navbar/Navbar.jsx
+    user_interactions:
+      - Click navigation links
+      - Open mobile menu
+  - name: Contact Form
+    description: Form for users to get in touch
+    files:
+      - src/components/contact/ContactForm/ContactForm.jsx
+    user_interactions:
+      - Fill name, email, message
+      - Submit form
+  - name: Service Redirection
+    description: Redirects /services to the first service item
+    files:
+      - src/router.jsx
+    user_interactions:
+      - Navigate to /services
+known_limitations: []

@@ -2,41 +2,41 @@
     {
         "id": "p1",
         "name": "Global Sports Network",
-        "logo": "/assets/images/partners/gsn.svg"
+        "logo": "https://placehold.co/200x80?text=GSN"
     },
     {
         "id": "p2",
         "name": "Stadium Solutions",
-        "logo": "/assets/images/partners/stadium.svg"
+        "logo": "https://placehold.co/200x80?text=Stadium"
     },
     {
         "id": "p3",
         "name": "BrandVision Media",
-        "logo": "/assets/images/partners/brandvision.svg"
+        "logo": "https://placehold.co/200x80?text=BrandVision"
     },
     {
         "id": "p4",
         "name": "SportTech International",
-        "logo": "/assets/images/partners/sporttech.svg"
+        "logo": "https://placehold.co/200x80?text=SportTech"
     },
     {
         "id": "p5",
         "name": "Digital Arena",
-        "logo": "/assets/images/partners/digitalarena.svg"
+        "logo": "https://placehold.co/200x80?text=DigitalArena"
     },
     {
         "id": "p6",
         "name": "ProLeague Marketing",
-        "logo": "/assets/images/partners/proleague.svg"
+        "logo": "https://placehold.co/200x80?text=ProLeague"
     },
     {
         "id": "p7",
         "name": "Victory Brands",
-        "logo": "/assets/images/partners/victory.svg"
+        "logo": "https://placehold.co/200x80?text=Victory"
     },
     {
         "id": "p8",
         "name": "Champion Media Group",
-        "logo": "/assets/images/partners/champion.svg"
+        "logo": "https://placehold.co/200x80?text=Champion"
     }
 ]
