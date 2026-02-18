@@ -1,5 +1,6 @@
 import { useDocumentTitle } from '@hooks/useDocumentTitle';
 import HeroSection from '@components/home/HeroSection';
+import LiveScoresTicker from '@components/home/LiveScoresTicker';
 import ServicesOverview from '@components/home/ServicesOverview';
 import AboutSnapshot from '@components/home/AboutSnapshot';
 import SportsCategories from '@components/home/SportsCategories';
@@ -14,6 +15,7 @@ const HomePage = () => {
     return (
         <>
             <HeroSection />
+            <LiveScoresTicker />
             <ServicesOverview />
             <AboutSnapshot />
             <SportsCategories />
