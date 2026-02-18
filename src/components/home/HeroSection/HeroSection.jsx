@@ -91,19 +91,7 @@ const HeroSection = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.8 }}
                 >
-                    <Link to="/editorial">
-                        <Button
-                            size="lg"
-                            className="px-8 py-3 text-base font-semibold rounded-full"
-                            style={{
-                                background: 'var(--sp-gradient-primary)',
-                                color: '#fff',
-                                border: 'none',
-                            }}
-                        >
-                            Read Latest News
-                        </Button>
-                    </Link>
+
                     <Link to="/services">
                         <Button
                             variant="outline"
