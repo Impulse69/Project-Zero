@@ -1,82 +1,219 @@
 /* ══════════════════════════════════════════════════════════════
-   PAGE.MODULE.CSS — Home Page (Foundation Verification)
+   HOMEPAGE STYLES — Hero & Global Layout
    ══════════════════════════════════════════════════════════════ */
 
 .main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: var(--sp-bg-primary);
+  position: relative;
+  background-color: var(--sp-bg-primary);
+  color: var(--sp-text-primary);
+  overflow-x: hidden;
 }
 
-.hero {
+/* ── Navbar ── */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: var(--sp-space-6) 0;
+  z-index: var(--sp-z-sticky);
+  background: transparent;
+  /* Initially transparent on hero */
+}
+
+.logo {
+  font-family: var(--sp-font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  background: var(--sp-gradient-primary);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.navLinks {
+  display: flex;
+  gap: var(--sp-space-8);
+}
+
+.navLink {
+  color: var(--sp-text-secondary);
+  font-weight: 500;
+  font-size: var(--sp-text-sm);
+  transition: color 0.2s ease;
+}
+
+.navLink:hover {
+  color: var(--sp-text-primary);
+}
+
+.ctaButton {
+  background: var(--sp-gradient-primary);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--sp-radius-full);
+  color: #fff;
+  font-weight: 600;
+  font-size: var(--sp-text-sm);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.4);
+}
+
+/* ── Hero Section ── */
+.heroSection {
+  position: relative;
+  height: 100vh;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.heroBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  /* Dark overlay to ensure text contrast */
+  background: radial-gradient(circle at center, transparent 0%, rgba(10, 10, 15, 0.4) 100%);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  /* Above illustration */
+  max-width: 900px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   gap: var(--sp-space-6);
-  padding: var(--sp-space-8);
+}
+
+/* ── Hero Typography ── */
+.badgeWrapper {
+  margin-bottom: var(--sp-space-2);
 }
 
 .badge {
   display: inline-block;
   font-size: var(--sp-text-sm);
-  font-weight: var(--sp-font-medium);
+  font-weight: 600;
   color: var(--sp-color-secondary);
-  background: rgba(0, 212, 170, 0.08);
+  background: rgba(0, 212, 170, 0.1);
   border: 1px solid rgba(0, 212, 170, 0.2);
-  padding: var(--sp-space-2) var(--sp-space-4);
+  padding: 6px 16px;
   border-radius: var(--sp-radius-full);
-  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  backdrop-filter: blur(4px);
+}
+
+.headline {
+  font-family: var(--sp-font-display);
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin: 0;
   text-transform: uppercase;
 }
 
-.title {
-  font-family: var(--sp-font-display);
-  font-size: var(--sp-text-6xl);
-  font-weight: var(--sp-font-bold);
-  line-height: var(--sp-leading-tight);
-  letter-spacing: -0.03em;
-  color: var(--sp-text-primary);
+.headlineAccent {
+  background: linear-gradient(135deg, #fff 30%, #6c63ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
-.subtitle {
-  font-size: var(--sp-text-xl);
+.subheadline {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
   color: var(--sp-text-secondary);
-  font-weight: var(--sp-font-light);
+  max-width: 680px;
+  line-height: 1.6;
+  font-weight: 300;
+  margin-top: var(--sp-space-2);
+}
+
+/* ── Hero Actions ── */
+.heroActions {
+  display: flex;
+  gap: var(--sp-space-4);
+  margin-top: var(--sp-space-8);
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border-radius: var(--sp-radius-md);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
   letter-spacing: 0.02em;
 }
 
-.tokenPreview {
-  margin-top: var(--sp-space-10);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--sp-space-4);
+.btnPrimary {
+  background: var(--sp-gradient-cta);
+  border: none;
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(108, 99, 255, 0.4);
 }
 
-.colorRow {
-  display: flex;
-  gap: var(--sp-space-3);
+.btnPrimary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(108, 99, 255, 0.6);
 }
 
-.swatch {
-  width: 40px;
-  height: 40px;
-  border-radius: var(--sp-radius-md);
-  border: 1px solid var(--sp-border-default);
-  transition: transform var(--sp-transition-base), box-shadow var(--sp-transition-base);
+.btnGhost {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  backdrop-filter: blur(4px);
 }
 
-.swatch:hover {
-  transform: translateY(-4px) scale(1.1);
-  box-shadow: var(--sp-shadow-glow);
+.btnGhost:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: #fff;
 }
 
-.meta {
-  font-size: var(--sp-text-xs);
-  color: var(--sp-text-tertiary);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+/* ── Scroll Indicator ── */
+.scrollIndicator {
+  position: absolute;
+  bottom: 40px;
+  z-index: 1;
+  animation: bounce 2s infinite;
+  opacity: 0.7;
+}
+
+.scrollArrow {
+  font-size: 1.5rem;
+  color: var(--sp-text-secondary);
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-10px);
+  }
+
+  60% {
+    transform: translateY(-5px);
+  }
 }
