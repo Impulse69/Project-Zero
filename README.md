@@ -4,11 +4,38 @@
 
 ## About
 
-Sports Panorama is a premium sports marketing and branding solutions platform. This project is being rebuilt with **Next.js** for improved performance, SEO, and developer experience.
+Sports Panorama is a premium sports marketing and branding solutions platform built with **Next.js** (App Router).
 
 ## Status
 
-🚧 **Migration in progress** — This branch contains project documentation only. The Next.js implementation will be built from scratch using the specifications in the `docs/` folder.
+✅ **Phase 1 Complete** — Design system foundation is in place.
+🚧 **Phase 2+** — Components and pages to be built from Stitch mockups.
+
+## Quick Start
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) to verify the foundation.
+
+## Project Structure
+
+```
+src/
+├── app/                  # Next.js App Router
+│   ├── globals.css       # Master stylesheet (imports all layers)
+│   ├── layout.js         # Root layout (fonts, metadata)
+│   ├── page.js           # Home page
+│   └── page.module.css   # Home page styles
+└── styles/               # Design System (Phase 1)
+    ├── variables.css     # Design tokens (colors, spacing, type scale)
+    ├── reset.css         # Browser normalization
+    ├── typography.css    # Font styles & heading hierarchy
+    ├── utilities.css     # Layout helpers (flex, grid, container)
+    └── animations.css    # Keyframes & animation utilities
+```
 
 ## Documentation
 
@@ -26,19 +53,14 @@ All project specifications are in the [`docs/`](./docs) directory:
 | [API_AND_DATA.md](./docs/API_AND_DATA.md) | Data models and API integration plans |
 | [SEO_AND_PERFORMANCE.md](./docs/SEO_AND_PERFORMANCE.md) | SEO strategy and performance targets |
 | [PROGRESSIVE_BUILD.md](./docs/PROGRESSIVE_BUILD.md) | Phased build plan |
-| [SKILL.md](./docs/SKILL.md) | Development skill guide |
 
-## Tech Stack (Planned)
+## Tech Stack
 
-- **Framework:** Next.js (App Router)
+- **Framework:** Next.js 16 (App Router + Turbopack)
 - **Language:** JavaScript / JSX
-- **Styling:** CSS Modules + Tailwind CSS
-- **Animations:** Framer Motion
-- **Deployment:** TBD
-
-## Getting Started
-
-> _Implementation not yet started. See [PROGRESSIVE_BUILD.md](./docs/PROGRESSIVE_BUILD.md) for the build plan._
+- **Styling:** CSS Modules + CSS Custom Properties
+- **Fonts:** Inter (body) + Outfit (display) via `next/font`
+- **Animations:** CSS Keyframes (Framer Motion planned for Phase 7)
 
 ## License
 

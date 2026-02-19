@@ -1,0 +1,51 @@
+/* ══════════════════════════════════════════════════════════════
+   GLOBALS.CSS — Master Stylesheet
+   Imports all design system layers in the correct cascade order
+   ══════════════════════════════════════════════════════════════ */
+
+/* 1. Design Tokens */
+@import '../styles/variables.css';
+
+/* 2. Browser Reset */
+@import '../styles/reset.css';
+
+/* 3. Typography System */
+@import '../styles/typography.css';
+
+/* 4. Utility Classes */
+@import '../styles/utilities.css';
+
+/* 5. Animations */
+@import '../styles/animations.css';
+
+
+/* ── Global App Styles ── */
+html,
+body {
+  background-color: var(--sp-bg-primary);
+  color: var(--sp-text-primary);
+}
+
+/* Scrollbar styling for WebKit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--sp-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sp-bg-tertiary);
+  border-radius: var(--sp-radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sp-color-primary-dark);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--sp-bg-tertiary) var(--sp-bg-primary);
+}
