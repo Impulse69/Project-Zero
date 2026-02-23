@@ -1,0 +1,95 @@
+.section {
+    padding: var(--sp-space-24) 0;
+}
+
+.sectionGray {
+    background: var(--sp-bg-secondary);
+}
+
+.featured {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--sp-space-12);
+    align-items: center;
+}
+
+@media (min-width: 900px) {
+    .featured {
+        grid-template-columns: 55% 1fr;
+    }
+}
+
+.featuredImg {
+    border-radius: var(--sp-radius-xl);
+    height: 380px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding: var(--sp-space-6);
+}
+
+.featuredBadge {
+    background: var(--sp-color-primary);
+    color: #fff;
+    font-size: var(--sp-text-xs);
+    font-weight: var(--sp-font-semibold);
+    padding: var(--sp-space-2) var(--sp-space-4);
+    border-radius: var(--sp-radius-full);
+}
+
+.featuredContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.eyebrow {
+    font-size: var(--sp-text-xs);
+    font-weight: var(--sp-font-semibold);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--sp-color-primary);
+    margin-bottom: var(--sp-space-3);
+}
+
+.featuredTitle {
+    font-family: var(--sp-font-display);
+    font-size: var(--sp-text-3xl);
+    font-weight: var(--sp-font-bold);
+    color: var(--sp-text-primary);
+    letter-spacing: -0.02em;
+    margin-bottom: var(--sp-space-4);
+}
+
+.featuredDesc {
+    font-size: var(--sp-text-base);
+    color: var(--sp-text-tertiary);
+    line-height: var(--sp-leading-relaxed);
+    margin-bottom: var(--sp-space-6);
+}
+
+.featuredStats {
+    display: flex;
+    gap: var(--sp-space-8);
+    margin-bottom: var(--sp-space-8);
+}
+
+.featuredStat {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-space-1);
+}
+
+.featuredStatNum {
+    font-family: var(--sp-font-display);
+    font-size: var(--sp-text-3xl);
+    font-weight: var(--sp-font-bold);
+    color: var(--sp-color-primary);
+}
+
+.featuredStat span:last-child {
+    font-size: var(--sp-text-xs);
+    font-weight: var(--sp-font-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--sp-text-tertiary);
+}

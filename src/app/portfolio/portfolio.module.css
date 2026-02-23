@@ -1,0 +1,6 @@
+/* Shared with about.module.css — identical nav/footer base */
+.main {
+    min-height: 100vh;
+    background: var(--sp-bg-primary);
+    /* padding-top: 72px; removed because Layout handles offset if needed, or hero handles it */
+}

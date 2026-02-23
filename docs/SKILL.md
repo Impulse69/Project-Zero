@@ -133,6 +133,10 @@ src/
 - **PR scope:** One feature or one page per PR. Never bundle unrelated changes.
 - Do **not** commit commented-out code, `console.log`, or TODO items without a linked issue.
 
+### Stitch MCP Usage
+- **CRITICAL RULE:** Ensure that all UI created using the Stitch MCP are all made in the "Sports Panorama - Premium Sports Marketing Website" project folder.
+- **Do not** create any new projects for designing UIs.
+- **ALWAYS** use the stitch skills folder in the codebase and the Stitch MCP hand-in-hand when building UIs.
 ---
 
 ## 7. Quality Gates (Before Marking Any Task Complete)

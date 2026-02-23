@@ -1,0 +1,78 @@
+.section {
+    padding: 96px 0;
+    background: #fff;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.teamGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+@media (min-width: 900px) {
+    .teamGrid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.teamCard {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+    padding: 36px 24px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 250ms, box-shadow 250ms;
+}
+
+.teamCard:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.10);
+}
+
+.avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatarText {
+    font-family: 'Outfit', sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    color: #0a0a0f;
+}
+
+.teamName {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #0a0a0f;
+    margin-bottom: 4px;
+}
+
+.teamRole {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #00d4aa;
+    margin-bottom: 14px;
+}
+
+.teamBio {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #888;
+    line-height: 1.65;
+}

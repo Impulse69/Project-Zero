@@ -1,0 +1,110 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.footer {
+    background: #f8f9fa;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    padding-top: 72px;
+}
+
+.footerGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 48px;
+}
+
+@media (min-width: 768px) {
+    .footerGrid {
+        grid-template-columns: 2fr 1fr 1fr 1.4fr;
+    }
+}
+
+.footerLogo {
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: #0a0a0f;
+    margin-bottom: 14px;
+}
+
+.footerLogo em {
+    font-style: normal;
+    background: #6c63ff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.footerTagline {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #999;
+    line-height: 1.7;
+    max-width: 260px;
+}
+
+.footerCol {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footerHeading {
+    font-family: 'Outfit', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #0a0a0f;
+    margin-bottom: 4px;
+}
+
+.footerLink {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #888;
+    text-decoration: none;
+    transition: color 150ms ease;
+}
+
+.footerLink:hover {
+    color: #6c63ff;
+}
+
+.footerAddr {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #888;
+    line-height: 1.7;
+}
+
+.footerBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    padding: 24px 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #aaa;
+}
+
+.footerLegal {
+    display: flex;
+    gap: 24px;
+}
+
+.footerLegal a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 150ms ease;
+}
+
+.footerLegal a:hover {
+    color: #6c63ff;
+}

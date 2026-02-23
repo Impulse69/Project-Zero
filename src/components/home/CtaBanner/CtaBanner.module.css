@@ -1,0 +1,40 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.ctaBanner {
+    background: var(--sp-color-primary, #6c63ff);
+    padding: 96px 0;
+    text-align: center;
+}
+
+.ctaEyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.65);
+    margin-bottom: 16px;
+}
+
+.ctaTitle {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+}
+
+.ctaSub {
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.78);
+    max-width: 520px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+}

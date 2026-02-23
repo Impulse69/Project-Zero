@@ -1,0 +1,63 @@
+.section {
+    padding: 96px 0;
+    background: #ffffff;
+}
+
+.sectionTint {
+    background: #f8f9fa !important;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.sportsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .sportsGrid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.sportCard {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+    padding: 40px 24px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: transform 250ms ease, box-shadow 250ms ease;
+}
+
+.sportCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.sportEmoji {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.sportName {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #0a0a0f;
+    margin-bottom: 16px;
+}
+
+.sportBar {
+    height: 3px;
+    border-radius: 9999px;
+    width: 40px;
+    margin: 0 auto;
+}

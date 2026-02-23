@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sports Panorama - Contact</title>
+<!-- Google Fonts: Inter for Body, Outfit for Headings -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Outfit:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#6961ff",
+                "background-light": "#f5f5f8",
+                "background-dark": "#100f23",
+                "navy-dark": "#0d0c1d",
+                "charcoal": "#334155",
+                "teal-breadcrumb": "#0d9488"
+              },
+              fontFamily: {
+                "display": ["Inter", "sans-serif"],
+                "heading": ["Outfit", "sans-serif"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Outfit', sans-serif; }
+        .soft-shadow { box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-charcoal selection:bg-primary/30">
+<!-- Top Navigation Placeholder -->
+<nav class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 px-6 py-4 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary font-bold">sports_handball</span>
+<span class="font-heading font-extrabold text-xl tracking-tight text-navy-dark dark:text-white uppercase">Panorama</span>
+</div>
+<button class="material-symbols-outlined text-navy-dark dark:text-white">menu</button>
+</nav>
+<main class="min-h-screen pb-24">
+<!-- Hero Section -->
+<section class="relative bg-white dark:bg-background-dark px-6 pt-12 pb-16 overflow-hidden">
+<!-- Subtle Gray Shape Decoration -->
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-slate-50 dark:bg-slate-900 rounded-full blur-3xl opacity-50"></div>
+<div class="relative z-10 max-w-xl mx-auto">
+<nav aria-label="Breadcrumb" class="flex mb-6">
+<ol class="inline-flex items-center space-x-1 md:space-x-3">
+<li class="inline-flex items-center">
+<a class="text-sm font-medium text-teal-breadcrumb hover:underline" href="#">Home</a>
+</li>
+<li>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-sm text-slate-400 mx-1">chevron_right</span>
+<span class="text-sm font-medium text-slate-400 ml-1">Contact</span>
+</div>
+</li>
+</ol>
+</nav>
+<h1 class="text-5xl md:text-6xl font-extrabold text-navy-dark dark:text-white leading-[1.1] mb-6 tracking-tight">
+                    Get in <span class="text-primary">Touch</span>
+</h1>
+<p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed max-w-md">
+                    Ready to elevate your sports brand? Let's talk strategy.
+                </p>
+</div>
+</section>
+<!-- Main Content -->
+<div class="px-6 -mt-8 max-w-xl mx-auto space-y-8">
+<!-- Left Column: Contact Form -->
+<section class="bg-white dark:bg-slate-900 p-8 rounded-xl soft-shadow border border-slate-100 dark:border-slate-800">
+<form action="#" class="space-y-6" method="POST">
+<div>
+<label class="block text-sm font-semibold text-navy-dark dark:text-white mb-2" for="full-name">Full Name</label>
+<input class="w-full px-4 py-3 rounded-lg border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-primary focus:border-primary transition-all placeholder:text-slate-400" id="full-name" name="full-name" placeholder="John Doe" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-semibold text-navy-dark dark:text-white mb-2" for="email">Email Address</label>
+<input class="w-full px-4 py-3 rounded-lg border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-primary focus:border-primary transition-all placeholder:text-slate-400" id="email" name="email" placeholder="john@example.com" type="email"/>
+</div>
+<div>
+<label class="block text-sm font-semibold text-navy-dark dark:text-white mb-2" for="phone">Phone Number</label>
+<input class="w-full px-4 py-3 rounded-lg border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-primary focus:border-primary transition-all placeholder:text-slate-400" id="phone" name="phone" placeholder="+1 (555) 000-0000" type="tel"/>
+</div>
+<div>
+<label class="block text-sm font-semibold text-navy-dark dark:text-white mb-2" for="subject">Subject Line</label>
+<select class="w-full px-4 py-3 rounded-lg border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-primary focus:border-primary transition-all" id="subject" name="subject">
+<option value="">Select a category</option>
+<option value="marketing">Marketing Strategy</option>
+<option value="sponsorship">Sponsorship Inquiry</option>
+<option value="branding">Brand Design</option>
+<option value="other">General Question</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-semibold text-navy-dark dark:text-white mb-2" for="message">Message</label>
+<textarea class="w-full px-4 py-3 rounded-lg border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-primary focus:border-primary transition-all placeholder:text-slate-400" id="message" name="message" placeholder="How can we help you win?" rows="4"></textarea>
+</div>
+<button class="w-full py-4 bg-primary hover:bg-primary/90 text-white font-bold rounded-lg transition-transform active:scale-[0.98] soft-shadow" type="submit">
+                        Send Message
+                    </button>
+</form>
+</section>
+<!-- Right Column: Info Cards Stack -->
+<section class="grid grid-cols-1 gap-4">
+<!-- London HQ -->
+<div class="bg-white dark:bg-slate-900 p-6 rounded-xl soft-shadow border border-slate-100 dark:border-slate-800 flex items-start gap-4">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<div>
+<h3 class="font-bold text-navy-dark dark:text-white mb-1">London HQ</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                            22 Bishopsgate, London EC2N 4BQ<br/>United Kingdom
+                        </p>
+</div>
+</div>
+<!-- Email -->
+<div class="bg-white dark:bg-slate-900 p-6 rounded-xl soft-shadow border border-slate-100 dark:border-slate-800 flex items-start gap-4">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<div>
+<h3 class="font-bold text-navy-dark dark:text-white mb-1">Email</h3>
+<p class="text-primary font-medium text-sm">hello@sportspanorama.com</p>
+</div>
+</div>
+<!-- Phone -->
+<div class="bg-white dark:bg-slate-900 p-6 rounded-xl soft-shadow border border-slate-100 dark:border-slate-800 flex items-start gap-4">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">call</span>
+</div>
+<div>
+<h3 class="font-bold text-navy-dark dark:text-white mb-1">Phone</h3>
+<p class="text-slate-600 dark:text-slate-400 font-medium text-sm">+44 20 7946 0123</p>
+</div>
+</div>
+<!-- Office Hours -->
+<div class="bg-white dark:bg-slate-900 p-6 rounded-xl soft-shadow border border-slate-100 dark:border-slate-800 flex items-start gap-4">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">schedule</span>
+</div>
+<div>
+<h3 class="font-bold text-navy-dark dark:text-white mb-1">Office Hours</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Mon-Fri 9AM - 6PM GMT</p>
+</div>
+</div>
+</section>
+<!-- Map Placeholder -->
+<div class="relative w-full h-48 bg-slate-200 dark:bg-slate-800 rounded-xl overflow-hidden soft-shadow">
+<img class="w-full h-full object-cover opacity-80 grayscale" data-alt="Modern map of London financial district" data-location="London" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwVobXAz_-AKdHrZEq-P8aJ95MvLm-gvDiVognYBtcM00QP8qJVzzciItqeYQ7Q_xgsKfvd1mzSwpwsJZEu6qAiFp-zV8xlnxXfYxxkWWivtB5zLfk3_h0906snczuPJONcuT6PibDP-q1BJeLmThm77CqT5Xfqrtt9KgksxKeujQl5NDUKRwwkPHDtmzZrpNy4sK9SxzJenS6VTgDRNDeQgAYq2fUgQo4vbIM_zMAmSTnSlaNLQIa8vkf-1DjtNkDqkWLkyK1XyaE"/>
+<div class="absolute inset-0 bg-primary/10 pointer-events-none"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+<span class="material-symbols-outlined text-primary text-4xl drop-shadow-lg">location_on</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Placeholder -->
+<footer class="bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-12 px-6">
+<div class="max-w-xl mx-auto text-center space-y-4">
+<div class="flex items-center justify-center gap-2 mb-4 opacity-50">
+<span class="material-symbols-outlined text-navy-dark dark:text-white">sports_handball</span>
+<span class="font-heading font-extrabold text-lg tracking-tight text-navy-dark dark:text-white uppercase">Panorama</span>
+</div>
+<p class="text-sm text-slate-400">© 2024 Sports Panorama Marketing Group.</p>
+<div class="flex justify-center gap-6 text-slate-400 text-xs font-semibold uppercase tracking-widest">
+<a href="#">Privacy</a>
+<a href="#">Terms</a>
+<a href="#">LinkedIn</a>
+</div>
+</div>
+</footer>
+<!-- Mobile Bottom Nav Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 dark:bg-background-dark/95 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 px-6 pb-6 pt-3 flex justify-between items-center max-w-full">
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">analytics</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Services</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">folder_special</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Work</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined fill-1">chat</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Contact</span>
+</a>
+</div>
+</body></html>

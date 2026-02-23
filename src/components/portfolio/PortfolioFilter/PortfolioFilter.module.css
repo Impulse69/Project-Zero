@@ -1,0 +1,48 @@
+.filterBar {
+    position: sticky;
+    top: 72px;
+    z-index: var(--sp-z-dropdown);
+    background: var(--sp-bg-primary);
+    border-bottom: 1px solid var(--sp-border-subtle);
+    box-shadow: var(--sp-shadow-sm);
+}
+
+.filterInner {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-space-3);
+    padding: var(--sp-space-3) 0;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.filterBtn {
+    display: inline-flex;
+    align-items: center;
+    padding: var(--sp-space-2) var(--sp-space-5);
+    background: var(--sp-bg-secondary);
+    color: var(--sp-text-secondary);
+    border: 1px solid var(--sp-border-subtle);
+    border-radius: var(--sp-radius-full);
+    font-size: var(--sp-text-sm);
+    font-weight: var(--sp-font-medium);
+    cursor: pointer;
+    transition: all var(--sp-transition-base);
+    white-space: nowrap;
+}
+
+.filterBtn:hover {
+    background: rgba(108, 99, 255, 0.08);
+    color: var(--sp-color-primary);
+    border-color: rgba(108, 99, 255, 0.3);
+}
+
+.filterBtnActive {
+    background: var(--sp-color-primary) !important;
+    color: #fff !important;
+    border-color: transparent !important;
+}

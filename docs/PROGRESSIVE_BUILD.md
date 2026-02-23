@@ -117,4 +117,7 @@ When a user asks for a new feature (e.g., "Build the About Page"), follow this p
 4.  **Execute Phase 6**: Assemble into `AboutPage.jsx`.
 5.  **Finish with Phase 7**: Add animations and polish.
 
+> **CRITICAL STITCH MCP RULE:**
+> Ensure that all UI created using the Stitch MCP are all made in the "Sports Panorama - Premium Sports Marketing Website" project folder. **Do not create any new projects for designing UIs.**
+
 **Do not** build a monolithic `AboutPage.jsx` file with inline styles and hardcoded sub-components. **Always** decompose.

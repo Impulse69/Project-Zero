@@ -1,0 +1,22 @@
+.cta {
+    background: var(--sp-gradient-cta);
+    padding: var(--sp-space-24) 0;
+    text-align: center;
+}
+
+.ctaTitle {
+    font-family: var(--sp-font-display);
+    font-size: var(--sp-text-4xl);
+    font-weight: var(--sp-font-bold);
+    color: #fff;
+    letter-spacing: -0.02em;
+    margin-bottom: var(--sp-space-4);
+}
+
+.ctaSub {
+    font-size: var(--sp-text-lg);
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 500px;
+    margin: 0 auto var(--sp-space-8);
+    line-height: var(--sp-leading-relaxed);
+}
